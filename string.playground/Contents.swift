@@ -9,11 +9,8 @@
 import UIKit
 
 var s: String = "Happy"
-print(s[3])
 
 
-
-/*
 // 1. Index로 접근 (offsetBy:)
 
 print(s[s.startIndex])
@@ -65,5 +62,3 @@ print(arr[3])
 let arr_map = s.map { String($0)}
 print(arr_map)
 print(arr_map[4])
-
-*/
