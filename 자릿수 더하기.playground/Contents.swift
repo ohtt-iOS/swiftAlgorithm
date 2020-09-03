@@ -7,14 +7,16 @@ import UIKit
 func solution(_ n:Int) -> Int
 {
     var answer : Int = 0
-    let stringTest : Array = Array(String(n))
-    for i in 0..<stringTest.count {
-        answer += Int(String(stringTest[i]))!
-    }
+    /*for i in String(n) {
+        answer += Int(String(i))!
+    }*/
+    //reduce 활용해보기
+    
+    answer = String(n).reduce(0,{$0+Int(String($1))!})
  
     return answer
 }
-solution(345)
+print(solution(345))
 
 // 연습해본 것
 /*
