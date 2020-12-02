@@ -13,6 +13,11 @@ print(evenSquared)
 //let evens = (0..<10).lazy.filter { $0 % 2 == 0 }
 //let evenSquared = (0..<10).lazy.filter({ $0 % 2 == 0 }).map({ $0 * $0 })
 
+var eveneven :[Int] = []
 let evenStride = stride(from: 0,to: 10, by: 2)
-let evenevne = Array(evenStride)
-print(evenevne)
+for i in evenStride {
+    eveneven.append(i)
+}
+//let evenevne = Array(evenStride)
+print(eveneven)
+ 
