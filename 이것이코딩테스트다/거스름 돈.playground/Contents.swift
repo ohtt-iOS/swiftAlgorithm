@@ -4,7 +4,7 @@
 // Greedy : 탐욕법
 // 문제 1번 - 거스름 돈
 
-import UIKit
+import Foundation
 
 var n: Int = 1260
 var count: Int = 0
