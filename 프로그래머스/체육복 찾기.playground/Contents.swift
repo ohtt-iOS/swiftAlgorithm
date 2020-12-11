@@ -19,7 +19,7 @@ func solution(_ n:Int, _ lost:[Int], _ reserve:[Int]) -> Int {
     for i in reserve {
         if students[i] == false {
             students[i] = true
-            if let index = reserve_my.index(of: i) {
+            if let index = reserve_my.firstIndex(of: i) {
                 reserve_my.remove(at: index)
             }
         }
