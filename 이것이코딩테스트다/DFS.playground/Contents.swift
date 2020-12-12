@@ -3,6 +3,8 @@
 // 이것이 코딩테스트다
 // DFS 연습
 
+import Foundation
+
 func dfs(v: Int){
     
     visited[v] = true
