@@ -42,28 +42,19 @@ class LinkedList<T> {
         return node
     }
     
-    func append(_ newNode: Node<T>) {
-        if let tail = self.tail {
-            tail.next = newNode
-            self.tail = tail.next
-        } else {
-            self.head = newNode
-            self.tail = newNode
-        }
-    }
-    
     var count: Int {
         guard var node = head else {
             return 0
         }
         
-        var count = 0
+        var count = 1
         while let next = node.next {
             node = next
             count += 1
         }
         return count
     }
+    
     
     func node(at index: Int) -> Node<T>? {
         if index == 0 {
@@ -81,56 +72,80 @@ class LinkedList<T> {
         }
     }
     
+    
+    func append(_ newNode: Node<T>) {
+        if let tail = self.tail {
+            tail.next = newNode
+            self.tail = tail.next
+        } else {
+            self.head = newNode
+            self.tail = newNode
+        }
+    }
+    
+    func insert(_ newNode: Node<T>, at index: Int) {
+        if self.head == nil {
+            self.head = newNode
+            self.tail = newNode
+            return
+        }
+        guard let frontNode = node(at: index-1) else {
+            self.tail?.next = newNode
+            self.tail = newNode
+            return
+        }
+        guard let nextNode = frontNode.next else {
+            frontNode.next = newNode
+            self.tail = newNode
+            return
+        }
+        newNode.next = nextNode
+        frontNode.next = newNode
+    }
+    
     func removeAll() {
         head = nil
     }
     
     func remove(at index: Int) -> T? {
-        // index-1 위치의 노드(frontNode)를 찾을 수 없는 경우 -> 아무 동작 하지 않음
-        guard let frontNode = node(at: index-1) else {
+        guard let frontNode = node(at: index-1) else { // 인덱스 앞 노드를 찾을 수 없다면 -> nil 반환
             return nil
         }
-
-        // index-1 위치의 노드(frontNode)가 마지막 노드인 경우 -> 아무 동작 하지 않음
-        guard let removeNode = frontNode.next else {
+        
+        guard let removeNode = frontNode.next else { // 인덱스 앞 노드가 마지막 노드라면 -> nil 반환
             return nil
         }
-
-        // index 위치의 노드(removeNode)가 마지막 노드인 경우 -> tail에 frontNode를 저장함
-        guard let nextNode = removeNode.next else {
+        
+        guard let nextNode = removeNode.next else { // index가 마지막 위치라면? -> tail에 index 이전 노드 저장
             frontNode.next = nil
             self.tail = frontNode
-            return
+            return removeNode.value
         }
-
-        // index 위치의 노드(removeNode)가 마지막 노드가 아닌 경우
-        frontNode.next = nextNode
-    }
-
-    
-    func remove(node: Node) -> T {
-        let prev = node.previous
-        let next = node.next
         
-        if let prev = prev {
-            prev.next = next
-        } else {
-            head = next
-        }
-        next?.previous = prev
+        frontNode.next = nextNode // index - 1 가 마지막 아닐 때 (일반적인 경우)
         
-        node.previous = nil
-        node.next = nil
-        return node.value
+        return removeNode.value
     }
     
-    func removeLast() -> T {
-        return remove(node: last!)
-    }
-    
-    func remove(at index: Int) -> T {
-        let n = node(at: index)
-        return remove(node: n)
-    }
 }
 
+
+
+var myLinkedList = LinkedList<Int>(head: Node(value: 3, next: nil))
+myLinkedList.append(Node(value: 4, next: nil))
+myLinkedList.append(Node(value: 8, next: nil))
+
+
+print(myLinkedList.count)
+print(myLinkedList.remove(at: 2)!)
+print(myLinkedList.count)
+myLinkedList.append(Node(value: 2, next: nil))
+print(myLinkedList.isEmpty)
+print(myLinkedList.node(at: 1)!.value)
+myLinkedList.insert(Node(value: 9, next: nil), at: 1)
+print(myLinkedList.last!.value)
+
+for i in 0..<myLinkedList.count {
+    print(myLinkedList.node(at: i)!.value, terminator : " ")
+
+}
