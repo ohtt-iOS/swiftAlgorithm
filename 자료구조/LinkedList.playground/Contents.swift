@@ -127,6 +127,9 @@ class LinkedList<T> {
         return removeNode.value
     }
     
+    public func removeLast() -> T? {
+        return remove(at: self.count - 1)
+    }
 }
 
 
@@ -147,5 +150,7 @@ print(myLinkedList.last!.value)
 
 for i in 0..<myLinkedList.count {
     print(myLinkedList.node(at: i)!.value, terminator : " ")
-
+    
 }
+print("")
+print(myLinkedList.removeLast()!)
