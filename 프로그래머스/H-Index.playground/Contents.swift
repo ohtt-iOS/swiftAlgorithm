@@ -19,13 +19,12 @@ func solution(_ citations:[Int]) -> Int {
             if resultCount >= result { break }
         }
         
+        
         if result > resultCount {
             return result - 1
         }
-        
         result += 1
     }
-    
     
     return result
 }
