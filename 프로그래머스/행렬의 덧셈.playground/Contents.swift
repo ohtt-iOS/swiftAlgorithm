@@ -1,3 +1,7 @@
+// 2020.09.05 SAT
+// swift 코테 연습
+// level 1 : 행렬의 덧셈
+
 import UIKit
 
 var arr1 : [[Int]] = [[1,2],[2,3],[4,7]]

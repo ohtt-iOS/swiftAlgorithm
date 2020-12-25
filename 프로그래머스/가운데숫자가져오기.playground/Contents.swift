@@ -1,3 +1,7 @@
+// 2020.09.05 SAT
+// swift 코테 연습
+// level 1 : 가운데숫자가져오기
+
 import UIKit
 
 var s = "345839"
