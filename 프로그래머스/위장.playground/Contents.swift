@@ -4,18 +4,26 @@
 // Level 2
 // 위장
 
-import UIKit
+import Foundation
 
-let clothes = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
-var category: [String: Int] = [:]
+func solution(_ clothes:[[String]]) -> Int {
+    var category: [String: Int] = [:]
+    var answer = 1
 
-for i in clothes {
-    if category[i[1]] == nil {
-        category[i[1]] = 1
+    for i in clothes {
+        if category[i[1]] == nil {
+            category[i[1]] = 1
+        }
+        else {
+         category[i[1]]! += 1
+        }
     }
-    else {
-        category[i[1]]! += 1
+    
+    for i in category.values {
+        answer *= (i+1)
     }
+    
+    
+    return  answer - 1
 }
 
-print(category)
