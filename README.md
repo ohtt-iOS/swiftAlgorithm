@@ -50,6 +50,9 @@
 2020.12.16| Swift    |level 2 |[소수 찾기](https://github.com/gwajeong/codingTestPractice/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.playground/Contents.swift) | [velog](https://velog.io/@sso0022/swift-%EC%86%8C%EC%88%98-%EC%B0%BE%EA%B8%B0)|
 2020.12.25| Swift    |level 2 |[주식가격](https://github.com/gwajeong/codingTestPractice/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9.playground/Contents.swift) |  |
 2020.12.25| Python    |level 2 |[주식가격](https://github.com/gwajeong/codingTestPractice/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Python/%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9.py)|  |
+2021.01.19| Python    |level 2 |[더맵게](https://github.com/gwajeong/swiftAlgorithm/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Python/%EB%8D%94%EB%A7%B5%EA%B2%8C.py)|  |
+2021.01.22| Swift    |level 2 |[위장](https://github.com/gwajeong/swiftAlgorithm/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/%EC%9C%84%EC%9E%A5.playground/Contents.swift)|  |
+2021.01.22| Python    |level 2 |[전화번호 목록](https://github.com/gwajeong/swiftAlgorithm/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Python/%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%20%EB%AA%A9%EB%A1%9D.py)|  
 
 </br>
 </br>
