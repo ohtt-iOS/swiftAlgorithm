@@ -6,8 +6,7 @@
 
 import UIKit
 
-var myID: String = "=.="
-
+var myID: String = "abcdefghijklmn.p"
 //1차
 myID = myID.lowercased()
 
@@ -26,7 +25,11 @@ while newID.contains("..") {
 
 //4차
 while newID.hasPrefix(".") {
-    newID.remove(at: newID.startIndex)
+    newID.removeFirst()
+}
+
+while newID.hasSuffix(".") {
+    newID.removeLast()
 }
 
 //5차
@@ -38,6 +41,9 @@ if newID == "" {
 if newID.count >= 16 {
     let index = newID.index(newID.startIndex, offsetBy: 15)
     newID = String(newID[newID.startIndex..<index])
+    if newID.hasSuffix(".") {
+        newID.removeLast()
+    }
 }
 
 //7차
