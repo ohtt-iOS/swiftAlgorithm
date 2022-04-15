@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D17B80CF2809B1B700B99B66 /* 포도주 시식.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17B80CE2809B1B700B99B66 /* 포도주 시식.swift */; };
 		D1E28B9927B7DB1700F18D66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28B9827B7DB1700F18D66 /* main.swift */; };
 		D1E28BA027B7DB2600F18D66 /* 햄버거 분배.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28B9F27B7DB2600F18D66 /* 햄버거 분배.swift */; };
 		D1E28BA227B7DB2F00F18D66 /* 게임을 만든 동준이.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28BA127B7DB2F00F18D66 /* 게임을 만든 동준이.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D17B80CE2809B1B700B99B66 /* 포도주 시식.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "포도주 시식.swift"; sourceTree = "<group>"; };
 		D1E28B9527B7DB1700F18D66 /* BeakjonnProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BeakjonnProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E28B9827B7DB1700F18D66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1E28B9F27B7DB2600F18D66 /* 햄버거 분배.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "햄버거 분배.swift"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				D1E28BA527B7DB3C00F18D66 /* 뒤집기.swift */,
 				D1E28BA727B7DC2D00F18D66 /* 럭키 스트레이트.swift */,
 				D1E28BA927B7DC3A00F18D66 /* 달팽이.swift */,
+				D17B80CE2809B1B700B99B66 /* 포도주 시식.swift */,
 			);
 			path = BeakjonnProject;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E28BA427B7DB3600F18D66 /* 수리공 항승.swift in Sources */,
+				D17B80CF2809B1B700B99B66 /* 포도주 시식.swift in Sources */,
 				D1E28BA227B7DB2F00F18D66 /* 게임을 만든 동준이.swift in Sources */,
 				D1E28B9927B7DB1700F18D66 /* main.swift in Sources */,
 				D1E28BA627B7DB3C00F18D66 /* 뒤집기.swift in Sources */,
